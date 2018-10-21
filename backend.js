@@ -9,7 +9,7 @@ var doFunction = function() {
     // // alert("help!");
     // return "Emily!!!!";
     // });
-    d3.csv("./Suicide.csv", function(error, dataset) {
+    d3.csv("./Suicide.csv", function(dataset) {
         console.log(dataset);
     });
 }
