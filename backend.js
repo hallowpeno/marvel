@@ -1,9 +1,19 @@
-var Papa = require('papaparse');
-var d3 = require('d3-fetch');
+// var Papa = require('papaparse');
+//var d3 = require('d3-fetch');
 
-d3.csv("Suicide.csv").then(function(data) {
-  console.log(data); // [{"Hello": "world"}, …]
-});
+var doFunction = function() {
+    console.log("Hello");
+    // d3.csv("./Suicide.csv").then(function(data) {
+    // console.log(data);
+    // // document.getElementById('paragraph').innerHTML = data;
+    // // alert("help!");
+    // return "Emily!!!!";
+    // });
+    d3.csv("./Suicide.csv", function(error, dataset) {
+        console.log(dataset);
+    });
+}
+
 
 /**
 var csvString = 'Suicide.csv,';
